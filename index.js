@@ -16,5 +16,9 @@ function differenceFromAnswer(guess, answer = generateRandomNumber()){
 }
 
 function makeAGuess(input){
-  return (differenceFromAnswer(input,))
+  if (Number.isInteger(input)){
+    return (differenceFromAnswer(input,))
+  } else{
+    return "Not an Integer"
+  }
 }
