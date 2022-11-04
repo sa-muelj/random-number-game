@@ -5,8 +5,7 @@ function generateRandomNumber(){
   return(Math.floor(Math.random() * 10));
 }
 
-function differenceFromAnswer(guess, answer){
-  answer = differenceFromAnswer()
+function differenceFromAnswer(guess, answer = generateRandomNumber()){
   if (guess === answer){
     return "Correct"
   } else if (guess > answer){
@@ -14,4 +13,8 @@ function differenceFromAnswer(guess, answer){
   } else {
     return "Too low"
   }
+}
+
+function makeAGuess(input){
+  return (differenceFromAnswer(input,))
 }
